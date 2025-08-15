@@ -11,6 +11,28 @@ The primary goal is to take a large, labelled corpus (e.g., BBC news articles gr
 
 ---
 
+## Dataset
+The dataset used in this project is the **BBC News Article Dataset** available at:  
+[http://mlg.ucd.ie/datasets/bbc.html](http://mlg.ucd.ie/datasets/bbc.html)  
+
+To use it:
+1. Download the `.zip` file from the link above.
+2. Extract its contents into the `bbc/` folder so the structure looks like:
+
+bbc/
+
+  business/
+  
+  entertainment/
+  
+  politics/
+  
+  sport/
+  
+  tech/
+
+---
+
 ## Features
 
 ### 1. Data Loading
@@ -35,16 +57,15 @@ The primary goal is to take a large, labelled corpus (e.g., BBC news articles gr
 ---
 
 ## Requirements
-## Requirements
 Install all dependencies from the provided requirements file:
 ```bash
 pip install -r requirements/requirements.txt
 ```
 
 Folder Structure
+```
 .
 ├── BBC_NLP_Task.ipynb       # Main Jupyter Notebook
-├── requirements.text
 ├── bbc/                     # Dataset root (subfolders per category)
 │   ├── business/
 │   ├── entertainment/
@@ -52,5 +73,7 @@ Folder Structure
 │   ├── sport/
 │   └── tech/
 ├── bbc/stopwords.txt        # Custom stopword list
+├── requirements/            # Dependency files
+│   └── requirements.txt     # Python package requirements
 └── README.md
 
