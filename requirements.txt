@@ -1,0 +1,7 @@
+spacy
+wikipedia
+bertopic[all] 
+sentence-transformers
+dateparser
+transformers[torch]
+sentencepiece
